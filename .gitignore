@@ -1,0 +1,26 @@
+# Ignore build and install directories
+/build/
+/install/
+/log/
+
+# Ignore VS Code settings
+.vscode/
+
+
+# Ignore temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+
+# Ignore CMake and colcon files
+CMakeLists.txt.user
+.colcon/
+ament_cmake_core/
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+*.gv
+*.pdf
