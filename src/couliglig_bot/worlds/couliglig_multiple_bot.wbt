@@ -11,8 +11,8 @@ WorldInfo {
   basicTimeStep 20
 }
 Viewpoint {
-  orientation -0.49596343568154244 0.5018017524930921 0.7086714835957646 1.8974855649190512
-  position 3.2968300303426448 -3.704191831405347 9.920290915347774
+  orientation -0.4509655065160956 0.5714432928867466 0.6856257542912411 1.6565544527616383
+  position -0.09139333163375651 -5.194715780693254 11.969501905983263
 }
 TexturedBackground {
 }
@@ -44,11 +44,11 @@ Robot {
       name "imu_link"
     }
     Lidar {
-      translation -0.04 -7.14743e-07 0.26
-      rotation 0.7083748568192507 0.005120008965114709 0.7058178573360859 3.74598e-06
+      translation 0.12 -2.63441e-08 0.16
+      rotation 0.7083748568192507 0.005120008965114709 0.7058178573360859 3.7459752872711776e-06
       name "LDS-01"
-      horizontalResolution 360
-      fieldOfView 6.2
+      horizontalResolution 357
+      fieldOfView 2.9
       numberOfLayers 1
       maxRange 15
     }
@@ -1441,11 +1441,11 @@ Robot {
       name "imu_link"
     }
     Lidar {
-      translation -0.04 -7.14743e-07 0.26
+      translation 0.12 -2.6344e-08 0.16
       rotation 0.7083748568192507 0.005120008965114709 0.7058178573360859 3.74598e-06
       name "LDS-01"
       horizontalResolution 360
-      fieldOfView 6.2
+      fieldOfView 2.9
       numberOfLayers 1
       maxRange 15
     }
