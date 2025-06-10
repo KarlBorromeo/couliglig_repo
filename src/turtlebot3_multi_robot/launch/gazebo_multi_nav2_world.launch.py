@@ -20,11 +20,12 @@ from launch import actions, events
 from launch.event_handlers import OnProcessExit
 
 def fix_mesh_path_error(package_dir):
+    print(package_dir,'hahha')
     wbt_path = os.path.join(package_dir,'worlds','couliglig_multiple_bot.wbt')
     with open(wbt_path, "r") as file:
         content = file.read()
 
-    newContent = content.replace("..",package_dir + '/stl_filessss')
+    newContent = content.replace("..",package_dir + '/stl_files')
 
     # rewrite the wbt content
     with open(wbt_path, "w") as file:

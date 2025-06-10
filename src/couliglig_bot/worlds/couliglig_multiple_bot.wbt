@@ -1163,7 +1163,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/ZED2iPikabot_ver2.STL"
+                  "../ZED2iPikabot_ver2.STL"
                 ]
               }
             }
@@ -1202,7 +1202,7 @@ Robot {
                               }
                               geometry Mesh {
                                 url [
-                                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P3.STL"
+                                  "../caster_wheel_P3.STL"
                                 ]
                               }
                             }
@@ -1227,7 +1227,7 @@ Robot {
                         }
                         geometry Mesh {
                           url [
-                            "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P2.STL"
+                            "../caster_wheel_P2.STL"
                           ]
                         }
                       }
@@ -1253,7 +1253,7 @@ Robot {
                   }
                   geometry Mesh {
                     url [
-                      "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P1.STL"
+                      "../caster_wheel_P1.STL"
                     ]
                   }
                 }
@@ -1267,7 +1267,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/casterwheel_casing.STL"
+                  "../casterwheel_casing.STL"
                 ]
               }
             }
@@ -1284,7 +1284,7 @@ Robot {
           }
           geometry Mesh {
             url [
-              "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/Al_Profile_Assem.STL"
+              "../Al_Profile_Assem.STL"
             ]
           }
         }
@@ -1316,7 +1316,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/wheel.STL"
+                        "../wheel.STL"
                       ]
                     }
                   }
@@ -1363,7 +1363,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/wheel.STL"
+                        "../wheel.STL"
                       ]
                     }
                   }
@@ -1392,7 +1392,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/bumper.STL"
+                  "../bumper.STL"
                 ]
               }
             }
@@ -2560,7 +2560,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/ZED2iPikabot_ver2.STL"
+                  "../ZED2iPikabot_ver2.STL"
                 ]
               }
             }
@@ -2599,7 +2599,7 @@ Robot {
                               }
                               geometry Mesh {
                                 url [
-                                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P3.STL"
+                                  "../caster_wheel_P3.STL"
                                 ]
                               }
                             }
@@ -2624,7 +2624,7 @@ Robot {
                         }
                         geometry Mesh {
                           url [
-                            "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P2.STL"
+                            "../caster_wheel_P2.STL"
                           ]
                         }
                       }
@@ -2650,7 +2650,7 @@ Robot {
                   }
                   geometry Mesh {
                     url [
-                      "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/caster_wheel_P1.STL"
+                      "../caster_wheel_P1.STL"
                     ]
                   }
                 }
@@ -2664,7 +2664,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/casterwheel_casing.STL"
+                  "../casterwheel_casing.STL"
                 ]
               }
             }
@@ -2681,7 +2681,7 @@ Robot {
           }
           geometry Mesh {
             url [
-              "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/Al_Profile_Assem.STL"
+              "../Al_Profile_Assem.STL"
             ]
           }
         }
@@ -2713,7 +2713,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/wheel.STL"
+                        "../wheel.STL"
                       ]
                     }
                   }
@@ -2760,7 +2760,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/wheel.STL"
+                        "../wheel.STL"
                       ]
                     }
                   }
@@ -2789,7 +2789,7 @@ Robot {
               }
               geometry Mesh {
                 url [
-                  "/home/karl/couliglig/install/couliglig_bot/share/couliglig_bot/stl_files/bumper.STL"
+                  "../bumper.STL"
                 ]
               }
             }
