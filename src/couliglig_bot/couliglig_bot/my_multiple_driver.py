@@ -8,7 +8,9 @@ from controller import Robot, Supervisor, InertialUnit
 from cv_bridge import CvBridge
 import rclpy
 import numpy as np
+np.float = float
 import math
+import tf_transformations
 
 HALF_DISTANCE_BETWEEN_WHEELS = 0.24 / 2
 WHEEL_RADIUS = 0.05
@@ -102,17 +104,13 @@ class RobotDriver:
     def __publish_odom(self):
         trans_values = self.__trans_field.getSFVec3f()
 
-        ori_values_quat = self.__inertial_unit.getQuaternion()
-        ori_values_quat_rnd = np.array(ori_values_quat)
+        # ori_values_quat = self.__inertial_unit.getQuaternion()
+        roll, pitch, yaw = self.__inertial_unit.getRollPitchYaw()
+        quat = tf_transformations.quaternion_from_euler(roll, pitch, yaw, axes='sxyz')
+        # x_ori, y_ori, z_ori, w_ori = quat 
+        # note: negate the xpos, ypos and zpos if using inertial unit
 
         x_pos, y_pos, z_pos = (trans_values[0], trans_values[1], trans_values[2])
-
-        # x_ori, y_ori, z_ori, w_ori = (
-        #     ori_values_quat_rnd[0],
-        #     ori_values_quat_rnd[1],
-        #     ori_values_quat_rnd[2],
-        #     ori_values_quat_rnd[3],
-        # )
         x_ori, y_ori, z_ori, w_ori = self.__get_rotation()
 
         # header_frame_id = "/" + self.__robot_name + "/odom" if  self.__robot_name[-1].isdigit() else "odom"
@@ -137,11 +135,9 @@ class RobotDriver:
         t.header.stamp = self.__clock.clock
         t.header.frame_id = "odom"
         t.child_frame_id = "base_footprint"
-
         t.transform.translation.x = x_pos
         t.transform.translation.y = y_pos
         t.transform.translation.z = z_pos
-
         t.transform.rotation.x = x_ori
         t.transform.rotation.y = y_ori
         t.transform.rotation.z = z_ori
@@ -154,8 +150,8 @@ class RobotDriver:
     def step(self):
         rclpy.spin_once(self.__node, timeout_sec=0)
 
-        forward_speed = self.__target_twist.linear.x
-        angular_speed = self.__target_twist.angular.z
+        forward_speed = self.__target_twist.linear.x/2
+        angular_speed = self.__target_twist.angular.z/2
 
         command_motor_left = (forward_speed - angular_speed * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS
         command_motor_right = (forward_speed + angular_speed * HALF_DISTANCE_BETWEEN_WHEELS) / WHEEL_RADIUS
