@@ -87,8 +87,8 @@ def generate_launch_description():
 
     # ─── Per-robot bring-up ───
     robots = [
-        {'name': 'robot1', 'x': '0.825591', 'y': '0.298411', 'z': '0.0863088'},
-        {'name': 'robot2', 'x': '4.8182', 'y': '1.09087', 'z': '0.0863088'},
+        {'name': 'robot1', 'x': '0.0', 'y': '0.0', 'z': '0.0863088'},
+        {'name': 'robot2', 'x': '-4.0', 'y': '-1.0', 'z': '0.0863088'},
     ]
     nav_launch_dir = os.path.join(
         get_package_share_directory('turtlebot3_multi_robot'),
@@ -140,7 +140,7 @@ def generate_launch_description():
             '{pose: {position: {x: ' + r['x'] +
             ', y: ' + r['y'] +
             ', z: ' + r['z'] +
-            '}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}}'
+            '}, orientation: {x: 0.0, y: 0.0, z: 1.0, w: 0.0}}}}'
         )
 
         # publish initialpose
